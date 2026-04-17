@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Mathematique | Articles et Projets</title>
+    <meta
+      name="description"
+      content="Site personnel pour publier des projets academiques et des articles de mathematiques."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Spectral:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-layer" aria-hidden="true"></div>
+
+    <header class="top-banner">
+      <div class="banner-wrap">
+        <div class="brand-block">
+          <p class="site-eyebrow">Anthony Marignac - Etudiant en mathematiques</p>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <div class="menu-group">
+            <button
+              id="projectsMenuBtn"
+              class="menu-button"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="projectsDropdown"
+            >
+              Projets académiques
+            </button>
+
+            <ul id="projectsDropdown" class="dropdown-menu" hidden>
+              <li>
+                <a href="index.html">
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a href="projets-academiques.html">
+                  Projets académiques
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <p class="hero-kicker">Mes travaux en mathématiques.</p>
+        <p>
+          Cette page rassemble, pour l'instant, mes projets academiques apparaissant sur mon CV. Chaque document est telechargeable en PDF.
+        </p>
+      </section>
+
+      <section id="projets-academiques" class="projects-section">
+        <div class="section-head">
+          <h2>Projets academiques</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Mémoire de M1</h3>
+            <p>
+              Mémoire de géométrie complexe sous la direction de Andreas Höring.
+              </p>
+              <p>
+              Etude d'une famille de tores complexes
+              et leurs plongements dans les espaces projectifs à travers le livre
+              d'Olivier Debarre.
+            </p>
+            <a class="download-link" href="assets/pdfs/Tores_complexes.pdf" download>
+              Telecharger le PDF
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>Projet final de Machine Learning</h3>
+            <p>
+            Projet final du cours d'introduction au machine learning.
+            </p>
+              <p>
+            Etude des RKHS dans un cadre continue avec termes d'offset à travers
+            l'article Some Properties of Regularized Kernel Methods de De Vito.
+            </p>
+            <a class="download-link" href="assets/pdfs/ProjetML.pdf" download>
+              Telecharger le PDF
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>Mémoire de M2</h3>
+            <p>
+              Mémoire de probabilités sous la direction de Roland Diel.
+              </p>
+              <p>
+                Etude des articles de Balint Toth sur les marches
+            aléatoires en milieux aléatoires auto-répulsives et le self-repelling brownian polymer et leur comportement
+          diffusifs et superdiffusifs selon la dimension.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

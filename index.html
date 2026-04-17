@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil | Portfolio Mathematique</title>
+    <meta
+      name="description"
+      content="Page d'accueil du site personnel de mathematiques."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Spectral:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <div class="background-layer" aria-hidden="true"></div>
+
+    <header class="top-banner">
+      <div class="banner-wrap">
+        <div class="brand-block">
+          <p class="site-eyebrow">Anthony Marignac - Etudiant en mathematiques</p>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <div class="menu-group">
+            <button
+              id="projectsMenuBtn"
+              class="menu-button"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="projectsDropdown"
+            >
+              Accueil
+            </button>
+
+            <ul id="projectsDropdown" class="dropdown-menu" hidden>
+              <li>
+                <a href="index.html">
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a href="projets-academiques.html">
+                  Projets académiques
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <h2>Bienvenue sur mon site.</h2>
+        <p>
+          Je suis actuellment etudiant en mathematiques en master 2 probabilités et statistique et
+          ce site a pour but, pour l'instant, de rassembler mes travaux académiques pour mon CV.
+        </p>
+        <p>
+          Pour y accéder cliquer sur l'onglet <strong> Accueil </strong>.
+        </p>
+      </section>
+
+      <section class="projects-section">
+        <div class="section-head">
+          <h2>Contenu du site</h2>
+          <p>Pas grand chose à part mes travaux académiques...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
