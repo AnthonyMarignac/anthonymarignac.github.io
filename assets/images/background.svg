@@ -1,0 +1,38 @@
+<svg width="1920" height="1280" viewBox="0 0 1920 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="145" y1="80" x2="1710" y2="1130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18355A"/>
+      <stop offset="0.48" stop-color="#1A495E"/>
+      <stop offset="1" stop-color="#48625B"/>
+    </linearGradient>
+    <radialGradient id="orbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 250) rotate(56) scale(480 360)">
+      <stop stop-color="#9CC2C7" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#9CC2C7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1520 910) rotate(122) scale(590 420)">
+      <stop stop-color="#E2D59A" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#E2D59A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridPattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" stroke="#D5E3F2" stroke-opacity="0.22"/>
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="1280" fill="url(#bgGrad)"/>
+  <rect width="1920" height="1280" fill="url(#gridPattern)"/>
+  <rect width="1920" height="1280" fill="url(#orbA)"/>
+  <rect width="1920" height="1280" fill="url(#orbB)"/>
+
+  <g opacity="0.32" stroke="#F0F6FF">
+    <path d="M0 954C271 842 551 830 862 944C1178 1060 1429 1070 1920 858"/>
+    <path d="M-70 694C194 589 433 584 731 666C1062 759 1347 773 2006 588"/>
+    <path d="M-38 451C280 344 536 338 871 428C1223 523 1487 533 1947 362"/>
+  </g>
+
+  <g opacity="0.26" fill="none" stroke="#EEF5FF">
+    <circle cx="270" cy="220" r="110"/>
+    <circle cx="1180" cy="380" r="175"/>
+    <circle cx="1650" cy="980" r="220"/>
+    <circle cx="665" cy="980" r="145"/>
+  </g>
+</svg>
