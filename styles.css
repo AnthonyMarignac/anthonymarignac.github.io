@@ -35,7 +35,7 @@ body {
   inset: 0;
   z-index: -2;
   background-image: linear-gradient(rgba(12, 23, 40, 0.44), rgba(12, 23, 40, 0.55)),
-    url("assets/images/background-math.svg");
+    url("assets/images/background.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
