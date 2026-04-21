@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Mathematique | Articles et Projets</title>
+    <meta
+      name="description"
+      content="Site personnel pour publier des projets academiques et des articles de mathematiques."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Spectral:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-layer" aria-hidden="true"></div>
+
+    <header class="top-banner">
+      <div class="banner-wrap">
+        <div class="brand-block">
+          <p class="site-eyebrow">Anthony Marignac - Etudiant en mathematiques</p>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <div class="menu-group">
+            <button
+              id="projectsMenuBtn"
+              class="menu-button"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="projectsDropdown"
+            >
+              Menu
+            </button>
+
+            <ul id="projectsDropdown" class="dropdown-menu" hidden>
+              <li>
+                <a href="index.html">
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a href="projets-academiques.html">
+                  Projets académiques
+                </a>
+              </li>
+              <li>
+                <a href="saw.html">
+                  Self-avoiding walk
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <p class="hero-kicker">Marche aleatoire auto-evitante (Self-Avoiding Walk).</p>
+        <p>
+          Cette page présente mon implémentation Python de l'algorithme du pivot pour générer une marche aléatoire
+          auto-évitante basé sur une structure de données d'arbre.
+        </p>  
+        <p>L'implémentation suit le pseudo-code réalisé
+          par N. Clisby dans l'article
+        <a href="https://arxiv.org/pdf/1005.1444"> Efficient implementation of the pivot algorithm for self-avoiding
+walks.</a>
+        </p>
+        
+      </section>
+
+      <section class="projects-section">
+        <div class="section-head">
+          <h2>Algorithme du pivot pour SAW</h2>
+        </div>
+
+        <div class="project-grid saw-grid">
+          <article class="project-card">
+            <h3>Code source SAW</h3>
+            <p>
+              Script python disponisble sur Github, génération de la marche sous forme de d'arbre SAWTree, 
+              reconstruction de la trajectoire et visualisation avec Matplotlib.
+            </p>
+            <a
+              class="download-link"
+              href="https://github.com/AnthonyMarignac/SAWTree-Algorithm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code source
+            </a>
+          </article>
+
+          <article class="project-card saw-illustration-card">
+            <h3>Illustration de la marche pour n=10 000.</h3>
+            <img
+              class="saw-illustration"
+              src="assets/images/SAW_figure.png"
+            />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
